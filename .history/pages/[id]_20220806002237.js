@@ -14,10 +14,10 @@ export const getServerSideProps = async (context)=>{
 const movie = (param) => {
     return (
       <div className={styles.main}>
-        <div>{param.post.title}</div>
-        <div>好きな理由</div>
-        <div>{param.post.reason}</div>
-        <Link href='/'><a>TOP</a></Link>
+        <div class='h2 my-3'>{param.post.title}</div>
+        <div class='h2 my-3 bg-primary text-white'>好きな理由</div>
+        <div class='h5'>{param.post.reason}</div>
+        <Link href='/'><a class='my-5'>TOP</a></Link>
       </div>
     );
 }
