@@ -21,7 +21,7 @@ export default function Home(data) {
                 <div key={item.id}>
                   <div>
                     <Link href={`/${item.id}`}>
-                      <a>{item.title}</a>
+                      <a class="h6">{item.title}</a>
                     </Link>
                     <Button />
                     </div>
